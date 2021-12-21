@@ -10,7 +10,9 @@
     <link rel="icon" href="images/favicon.png">
 
     <meta property="og:image" content="images/dest/preview.jpg">
-    <link href="libs/bootstrap-4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap-4.6.1/css/bootstrap.css">
+    <link href="fonts/fontello/css/fontello.css">
+
     <link rel="stylesheet" href="css/app.min.css">
 
 </head>
@@ -22,23 +24,45 @@
     <div class="container">
         <div class="header__wrapper">
             <div class="row">
-
+                <div class="col-2 d-flex ml-auto">
+                    <div class="lang">
+                        <div class="lang__current">
+                            <div class="text">Русский</div>
+                            <i class="ic ic-arrow-down"></i>
+                        </div>
+                        <ul class="lang__list">
+                            <li class="lang__item"><a href="#" class="lang__link">Русский</a></li>
+                            <li class="lang__item"><a href="#" class="lang__link">Українська</a></li>
+                        </ul>
+                    </div>
+                    <div class="applicant">
+                        Соискателю
+                        <i class="ic ic-arrow-right"></i>
+                    </div>
+                </div>
             </div>
             <div class="row">
 
+                <a href="#" class="header__logo">
+                    <img src="images/dest/logo-big.png" alt="logo" class="desktop">
+                    <img src="images/dest/logo-mobile.png" alt="logo" class="mobiles">
+                </a>
 
-                <ul class="nav">
+                <ul class="nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
+                        <a class="nav-link" href="#">Найти кандидатов</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Создать вакансию</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Реактор</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link">
+                            <i class="ic ic-bell"></i>
+                            <span class="counter">99+</span>
+                        </a>
                     </li>
                 </ul>
             </div>

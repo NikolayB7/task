@@ -6,9 +6,17 @@
 <font id="fontello" horiz-adv-x="1000" >
 <font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
-<glyph glyph-name="arrow-left" unicode="&#xe800;" d="M154 593l171 257 165 0-171-257-165 0z m-154-234l80 125 165 0-80-125 325-492-165 0-325 492z" horiz-adv-x="490" />
+<glyph glyph-name="hint" unicode="&#xe800;" d="M500-114c-256 0-464 208-464 464 0 256 208 464 464 464 256 0 464-208 464-464 0-256-208-464-464-464z m0 876c-227 0-412-185-412-412 0-227 185-412 412-412 227 0 413 185 413 412 0 227-186 412-413 412z m59-653v344h-172v-51h52v-293h-52v-52h224v52h-52z m-59 389c39 0 70 32 70 71 0 39-31 70-70 70-39 0-71-31-71-70 0-39 32-71 71-71z" horiz-adv-x="1000" />
 
-<glyph glyph-name="arrow-right" unicode="&#xe801;" d="M336 593l-171 257-165 0 171-257 165 0z m154-234l-80 125-165 0 80-125-325-492 165 0 325 492z" horiz-adv-x="490" />
+<glyph glyph-name="search" unicode="&#xe801;" d="M949-1l-231 231c45 64 72 141 72 225 0 218-177 395-395 395-218 0-395-177-395-395 0-218 177-394 395-394 84 0 162 26 226 71l230-231 98 98z m-811 456c0 142 115 257 257 257 141 0 256-115 256-257 0-141-115-256-256-256-142 0-257 115-257 256z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow-down" unicode="&#xe802;" d="M1732 584l-148 172-655-569-655 569-149-172 804-698 803 698z" horiz-adv-x="1857" />
+
+<glyph glyph-name="arrow-left" unicode="&#xe803;" d="M459-131l98 85-326 377 326 376-98 85-401-461 401-462z" horiz-adv-x="615" />
+
+<glyph glyph-name="arrow-right" unicode="&#xe804;" d="M139 844l-100-87 331-382-331-382 100-87 406 469-406 469z" horiz-adv-x="583" />
+
+<glyph glyph-name="bell" unicode="&#xe805;" d="M293 721c0 61 32 129 97 129 65 0 97-68 97-129 82 0 194-97 194-345l22-173 64-21v-129h-754v129l65 21 21 173c0 248 113 345 194 345z m237-733c-6-72-66-129-140-129-74 0-134 57-140 129h280z" horiz-adv-x="793" />
 </font>
 </defs>
 </svg>

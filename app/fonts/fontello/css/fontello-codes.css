@@ -1,3 +1,7 @@
 
-.ic-arrow-left:before { content: '\e800'; } /* '' */
-.ic-arrow-right:before { content: '\e801'; } /* '' */
+.ic-hint:before { content: '\e800'; } /* '' */
+.ic-search:before { content: '\e801'; } /* '' */
+.ic-arrow-down:before { content: '\e802'; } /* '' */
+.ic-arrow-left:before { content: '\e803'; } /* '' */
+.ic-arrow-right:before { content: '\e804'; } /* '' */
+.ic-bell:before { content: '\e805'; } /* '' */
