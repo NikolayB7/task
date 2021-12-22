@@ -89,6 +89,20 @@
       "search": [
         "bell"
       ]
+    },
+    {
+      "uid": "50eaff5785f7f9a1203b946cf44d5ee8",
+      "css": "lightning",
+      "code": 59398,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M372.1 401.8L481.5 31.3 1.1 598.2H252.9L143.5 968.8 623.9 401.8H372.1ZM127.5 539.6L346.6 281 293.7 460.4H497.5L278.4 719 331.3 539.6H127.5Z",
+        "width": 625
+      },
+      "search": [
+        "lightning"
+      ]
     }
   ]
 }

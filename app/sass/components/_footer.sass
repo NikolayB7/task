@@ -1,0 +1,71 @@
+.footer
+  position: relative
+  padding: 30px 0 15px
+  background: $white
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    height: 1px
+    transform: translateY(-100%)
+    background: $purple
+  &__wrapper
+    @include mmax(767)
+      margin: 0 15px
+  &__nav
+    padding-left: 0
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    @include mmax(767)
+      margin-top: 5px
+
+
+  &__nav-item
+    list-style: none
+    position: relative
+    &:not(:last-child)
+      padding-right: 7px
+      margin-right: 7px
+      &:after
+        content: ''
+        position: absolute
+        top: 50%
+        right: 0
+        width: 2px
+        height: 2px
+        background: $grey-dark
+        transform: translate(0%,-50%)
+
+  &__nav-link
+    display: inline-block
+    text-decoration: none
+    color: $grey-dark
+
+  &__bottom
+    position: relative
+    padding-top: 20px
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      height: 1px
+      background: #E9EBED
+      transform: translateY(-100%)
+    .copiright
+      margin-top: 10px
+      margin-bottom: 20px
+      font-size: 17px
+      line-height: 24px
+      color: $grey-dark
+    .place
+      a
+        color: $purple
+    @include mmax(767)
+      flex-direction: column
+

@@ -1,0 +1,111 @@
+
+.search-hint
+  margin-left: 20px
+  color: $green
+  @include mmax(490)
+    margin-top: 5px
+    margin-left: 0
+  a
+    outline: none
+    display: inline-block
+    position: relative
+    padding: 0
+    color: $green
+    transition: all 0.5s
+
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 0
+      left: 0
+      height: 1px
+      border-bottom: 1px dotted $green
+      transition: all 0.5s
+
+    &:hover
+      color: $purple
+
+      &:after
+        right: 50%
+        left: 50%
+
+        opacity: 0
+
+  &:hover
+    .popup
+      transform: translate(0)
+      opacity: 1
+      visibility: visible
+
+.popup
+  padding-top: 10px
+  min-width: 375px
+  position: absolute
+  left: -20px
+  z-index: 5
+  top: 100%
+  visibility: hidden
+  transform: translate(0, -.5em)
+  opacity: 0
+  transition: all 0.15s
+  @include mmax(767)
+    display: none
+  &__wrapper
+    position: relative
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25)
+    border-radius: 5px
+
+    &:after
+      content: ''
+      position: absolute
+      top: -30px
+      left: calc(50% - 25px)
+      background: $white
+      border: 10px solid transparent
+      transform: rotate(45deg) translateX(15px) translateY(15px)
+      box-shadow: 0 0 10px 0 #909090
+
+  &__content
+    position: relative
+    z-index: 7
+    border-radius: 5px
+    padding: 20px
+    background: $white
+
+  &__statistics
+    .item
+      padding-bottom: 10px
+      margin-bottom: 10px
+      border-bottom: 1px solid #E9EBED
+
+    .title
+      font-size: 15px
+      line-height: 21px
+      color: #2C3F52
+
+    .quantity, .date
+      font-size: 15px
+      line-height: 21px
+      color: #6B7886
+
+  &__menu
+    padding-left: 20px
+
+  &__menu-item
+    &::marker
+      color: #ABB2BA
+
+  &__menu-link
+    font-size: 15px
+    line-height: 24px
+    text-decoration: none
+    color: $blue !important
+    transition: all 0.5s
+
+    &:after
+      display: none
+
+    &:hover
+      text-decoration: none
+      color: $green

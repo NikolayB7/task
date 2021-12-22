@@ -1,0 +1,39 @@
+.btn
+  &:focus
+    outline: none
+    box-shadow: none
+  &_green
+    text-align: center
+
+    font-weight: 700
+    font-size: 17px
+    line-height: 20px
+    background: $green
+    color: $white
+    border: 1px solid $green
+    transition: all 0.5s
+
+    &:hover
+      color: $green
+      background: $white
+
+  &_blue
+    border: 1px solid $blue
+    font-size: 17px
+    font-weight: 700
+    line-height: 24px
+    background: transparent
+    color: $blue
+    transition: all 0.5s
+    i
+      font-size: 12px
+    &:hover
+      border: 1px solid $green
+      color: $green
+  &_light
+    color: $blue
+    transition: all 0.3s
+    &:hover
+      color: $green
+  &_small
+    padding: 8px 18px

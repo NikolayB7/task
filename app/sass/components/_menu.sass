@@ -1,0 +1,39 @@
+.menu
+  &__list
+    padding-left: 0
+
+  &__item
+    list-style-type: none
+
+    &:not(:last-child)
+      margin-right: 40px
+      @include mmax(991)
+        margin-right: 20px
+
+  &__link
+    text-decoration: none
+    font-weight: 700
+    font-size: 20px
+    line-height: 24px
+    color: $blue
+    transition: all 0.5s
+
+
+    &:hover
+      text-decoration: none
+      color: $green
+
+    &.notification
+      position: relative
+
+      i
+        font-size: 22px
+    @include mmax(991)
+      font-size: 16px
+    @include mmax(767)
+      font-weight: 400
+      font-size: 11px
+      line-height: 12px
+      img
+        margin-bottom: 5px
+

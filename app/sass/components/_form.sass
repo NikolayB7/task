@@ -1,0 +1,27 @@
+.search
+  &.open
+    .form-control
+      width: 100%
+      opacity: 1
+      visibility: visible
+
+  .form-search
+
+  .form-control
+    width: 0
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    right: 0
+    transition: all 0.5s
+
+    &:focus
+      box-shadow: none
+
+  .search-btn
+    position: relative
+    z-index: 5
+
+    i
+      font-size: 16px
+      color: #6B7886

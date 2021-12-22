@@ -1,0 +1,102 @@
+.vacancy
+  position: relative
+  padding-bottom: 20px
+  &:not(:last-child)
+    margin-bottom: 30px
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      right: -15px
+      left: -15px
+      height: 1px
+      background: #E9EBED
+  &__title
+    font-weight: 700
+    font-size: 24px
+    line-height: 26px
+    color: $blue
+    @include mmax(767)
+      font-size: 19px
+
+    .price
+      font-weight: 400
+      font-size: 24px
+      line-height: 26px
+      color: $grey-dark
+      @include mmax(767)
+        font-size: 19px
+  &__place
+    margin-top: 10px
+    margin-bottom: 20px
+    font-size: 17px
+    line-height: 24px
+    color: #2C3F52
+
+  &__middle
+
+    margin-bottom: 20px
+    .date
+      font-size: 17px
+      line-height: 24px
+      color: $grey-dark
+
+  &__nav
+    .list
+      padding-left: 0
+    .item
+      position: relative
+      list-style-type: none
+      &:not(:last-child)
+        padding-right: 10px
+        margin-right: 10px
+        &:after
+          content: ''
+          position: absolute
+          top: 50%
+          right: 0
+          width: 2px
+          height: 2px
+          background: $grey-dark
+
+    .link
+      text-decoration: none
+      transition: all 0.3s
+      &.orange
+        color: $orange
+
+  .response
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    @include mmax(767)
+      display: flex
+      align-items: center
+      flex-direction: row
+    .qty
+      font-weight: 700
+      font-size: 32px
+      line-height: 35px
+      color: $blue
+      @include mmax(767)
+        font-size: 19px
+        line-height: normal
+        margin-right: 5px
+
+    .text
+      font-size: 17px
+      line-height: 24px
+      color: $blue
+
+    .counter
+      @include mmax(767)
+        margin-left: 5px
+        position: static
+        transform: translate(0,0)
+
+
+.vacancy-page-bottom
+  margin-bottom: 60px
+  @include mmax(767)
+    flex-direction: column

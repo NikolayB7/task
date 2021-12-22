@@ -1,0 +1,254 @@
+// USER VARIABLES SECTION
+$accent: #000000
+// Accent Color
+$fontsize: 16px
+// Body Font Size
+$textcolor: #333333
+// Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif
+// System Font Family
+$font: "Arial", sans-serif
+// Roboto Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss"
+// Bootstrap Reboot collection
+
+
+// FONTS LOAD SECTION
+
+
+@font-face
+  font-family: "Arial"
+  src: url('../fonts/Arial/Arial-BoldMT.eot')
+  src: local('eot')
+  src: url('../fonts/Arial/Arial-BoldMT.woff') format('woff')
+  src: url('../fonts/Arial/Arial-BoldMT.ttf') format('ttf')
+  src: url('../fonts/Arial/ArialMT.eot') format('eot')
+  src: url('../fonts/Arial/ArialMT.woff') format('woff')
+  src: url('../fonts/Arial/ArialMT.ttf') format('ttf')
+
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+  color: #666
+
+
+::selection
+  background-color: $accent
+  color: #fff
+
+
+/*Remove Chrome autocomplete style*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active
+  -webkit-box-shadow: 0 0 0 30px white inset !important
+  border: none
+
+/*hide arrow input type number*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  /* display: none <- Crashes Chrome on hover */
+  -webkit-appearance: none
+  margin: 0
+/* <-- Apparently some margin are still there even though it's hidden */
+
+
+
+
+input,
+textarea
+  outline: none
+
+  &:focus:required:invalid
+    border-color: red
+
+
+  &:required:valid
+    border-color: green
+
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+
+b,
+strong
+  font-weight: bold
+
+
+ul, ol
+  //padding-left: 0
+  margin: 0
+
+
+body
+  font-family: $font
+  font-size: $fontsize
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  overflow-x: hidden
+  color: $textcolor
+  background: $grey
+
+
+main
+  padding-top: 30px
+
+
+body,
+.main-layout,
+html
+  height: 100%
+  display: flex
+  flex-direction: column
+
+
+header
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto
+
+
+main
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 1 0 auto
+
+
+footer
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto
+
+
+.top-layout
+  position: relative
+  padding-bottom: 20px
+  .left
+    @include mmax(991)
+      margin-bottom: 20px
+
+
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 15px
+    left: 15px
+    height: 1px
+    border-bottom: 1px solid #E9EBED
+
+
+.hint
+  margin-left: 5px
+  display: flex
+  align-items: center
+
+  i
+    font-size: 16px
+    color: $blue
+
+
+.dropdown-menu
+  width: 100%
+
+.dropdown
+  .current
+    font-size: 17px
+    line-height: 24px
+    color: $blue
+
+    i
+      margin-left: 5px
+      font-size: 8px
+      color: $blue
+
+
+.applicant
+  text-decoration: none
+  margin-left: 20px
+  display: flex
+  align-items: center
+  color: $grey-middle
+  transition: all 0.3s
+
+  i
+    font-size: 12px
+
+  &:hover
+    text-decoration: none
+
+.lang
+  position: relative
+
+  &:hover
+    .lang__list
+      max-height: 300px
+
+    i
+      transform: rotateX(180deg)
+
+  &_transparent
+    .lang__current
+    color: $grey-middle
+
+  &__current
+    cursor: pointer
+    display: flex
+    align-items: center
+    color: $blue
+
+    i
+      font-size: 8px
+      transition: all 0.3s
+
+    .text
+
+  &__list
+    padding-left: 10px
+    position: absolute
+    top: 100%
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 2
+    max-height: 0
+    overflow: hidden
+    border-radius: 4px
+    background: $white
+    transition: all 0.5s
+
+  &__item
+    padding: 5px 0
+    list-style-type: none
+
+    &:not(:last-child)
+  //margin-bottom: 10px
+  &__link
+    text-decoration: none
+    display: inline-block
+    padding: 0px 10px
+    transition: all 0.5s
+
+    &:hover
+      text-decoration: none
+      color: $green
+
+
+.share
+  margin-right: 30px
+  @include mmax(767)
+    display: none !important
+
+  &__logo
+    &:not(:last-child)
+      margin-right: 10px

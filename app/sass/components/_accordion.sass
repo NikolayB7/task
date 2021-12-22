@@ -1,0 +1,42 @@
+.accordion
+  border-bottom: 1px solid #E9EBED
+  margin-bottom: 20px
+  &__item
+
+  &__title
+    padding: 20px 0
+    .title
+      padding-left: 25px
+      position: relative
+      cursor: pointer
+      font-size: 17px
+      line-height: 24px
+      color: $blue
+      i
+        position: absolute
+        left: 0
+        top: 0%
+
+        font-size: 14px
+    .hint
+      cursor: pointer
+      margin-left: 5px
+
+    .count
+      font-size: 17px
+      line-height: 24px
+      margin-left: 5px
+      color: $grey-middle
+
+    &:not(.collapsed)
+      .title
+        display: flex
+        i
+          transform: rotate(90deg)
+
+  &__body
+    padding: 20px 30px
+    border: 1px solid #E9EBED
+    background: $white
+    @include mmax(767)
+      padding: 20px
