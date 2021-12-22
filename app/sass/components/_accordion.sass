@@ -1,6 +1,11 @@
 .accordion
   border-bottom: 1px solid #E9EBED
   margin-bottom: 20px
+  [aria-expanded='true']
+    .title
+      display: flex
+      i
+        transform: rotate(90deg)
   &__item
 
   &__title
@@ -28,11 +33,7 @@
       margin-left: 5px
       color: $grey-middle
 
-    &:not(.collapsed)
-      .title
-        display: flex
-        i
-          transform: rotate(90deg)
+
 
   &__body
     padding: 20px 30px

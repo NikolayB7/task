@@ -48,7 +48,7 @@
                 <span class="text">Для Работодателей</span>
             </a>
 
-            <nav class="menu ml-auto">
+            <nav class="menu ml-auto d-flex align-items-center">
                 <ul class="menu__list d-flex align-items-center">
                     <li class="menu__item">
                         <a class="menu__link" href="#">Найти кандидатов</a>
@@ -103,10 +103,12 @@
 <main>
     <div class="container">
         <div class="row">
-            <a href="#" class="back-section">
-                <i class="ic ic-arrow-left"></i>
-                Личный раздел
-            </a>
+            <div class="col-12">
+                <a href="#" class="back-section">
+                    <i class="ic ic-arrow-left"></i>
+                    Личный раздел
+                </a>
+            </div>
         </div>
         <div class="row">
             <div class="col-12 page-title  d-flex align-items-center">
@@ -165,10 +167,12 @@
                                     <li class="popup__menu-item"><a href="#" class="popup__menu-link">Подробнее о
                                         публикациях</a>
                                     </li>
-                                    <li class="popup__menu-item"><a href="#" class="popup__menu-link">Купить публикации от
+                                    <li class="popup__menu-item"><a href="#" class="popup__menu-link">Купить публикации
+                                        от
                                         349
                                         грн</a></li>
-                                    <li class="popup__menu-item"><a href="#" class="popup__menu-link">Купить пакеты услуг
+                                    <li class="popup__menu-item"><a href="#" class="popup__menu-link">Купить пакеты
+                                        услуг
                                         (публикации и доступ к базе резюме) от 390 грн</a></li>
                                 </ul>
                             </div>
@@ -183,50 +187,66 @@
 
 <footer class="footer">
     <div class="footer__wrapper">
-    <div class="container">
-            <div class="row d-flex flex-wrap justify-content-between  align-items-center">
-                <div class="lang">
-                    <div class="lang__current">
-                        <div class="text">Русский</div>
-                        <i class="ic ic-arrow-down"></i>
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 d-flex flex-wrap justify-content-between  align-items-center mb-3">
+                    <div class="lang">
+                        <div class="lang__current">
+                            <div class="text">Русский</div>
+                            <i class="ic ic-arrow-down"></i>
+                        </div>
+                        <ul class="lang__list">
+                            <li class="lang__item"><a href="#" class="lang__link">Русский</a></li>
+                            <li class="lang__item"><a href="#" class="lang__link">Українська</a></li>
+                        </ul>
                     </div>
-                    <ul class="lang__list">
-                        <li class="lang__item"><a href="#" class="lang__link">Русский</a></li>
-                        <li class="lang__item"><a href="#" class="lang__link">Українська</a></li>
+
+                    <div class="share ml-auto d-flex align-items-center">
+                        <a href="#" class="share__logo">
+                            <img src="images/dest/share1.png" alt=""></a>
+                        <a href="#" class="share__logo">
+                            <img src="images/dest/share2.png" alt=""></a>
+                    </div>
+                    <a href="#" class="btn btn_small btn_blue">Работодателю <i class="ic ic-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <ul class=" footer__nav">
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Ресурсы</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости сайта</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Условия использования</a></li>
                     </ul>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class=" copiright">
+                        © 2006–2016 Work.ua. Сайт поиска работы №1 в Украине.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                    <div class=" footer__bottom d-flex align-items-md-center ">
+                        <div class="place">
+                            Сделано в компании «<a href="#">Реактор</a>».
+                        </div>
+                        <ul class="footer__nav ml-md-auto">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Образование</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Тренинги</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Typing tutor</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-                <div class="share ml-auto d-flex align-items-center">
-                    <a href="#" class="share__logo">
-                        <img src="images/dest/share1.png" alt=""></a>
-                    <a href="#" class="share__logo">
-                        <img src="images/dest/share2.png" alt=""></a>
-                </div>
-                <a href="#" class="btn btn_small btn_blue">Работодателю <i class="ic ic-arrow-right"></i></a>
-            </div>
-            <ul class="row footer__nav">
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Ресурсы</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости сайта</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Условия использования</a></li>
-            </ul>
-            <div class="row copiright">
-                © 2006–2016 Work.ua. Сайт поиска работы №1 в Украине.
-            </div>
-            <div class="row footer__bottom">
-                <div class="place">
-                    Сделано в компании «<a href="#">Реактор</a>».
-                </div>
-                <ul class="footer__nav ml-md-auto">
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Образование</a></li>
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Тренинги</a></li>
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="#">Typing tutor</a></li>
-                </ul>
-            </div>
-    </div>
+        </div>
     </div>
 </footer>
+
 <script src="libs/jQuery.min.js"></script>
 <script src="libs/bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
 
