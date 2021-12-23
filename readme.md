@@ -25,19 +25,6 @@
 	<li>All <strong>images</strong> sources placed in <strong>app/images/src/</strong> folder.</li>
 </ol>
 
-<h2>Included features</h2>
-
-<ol>
-	<li><a href="https://getbootstrap.com/docs/4.0/content/reboot/">bootstrap-reboot</a> - Bootstrap Reboot CSS collection</li>
-	<li>
-		<a href="https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints">_breakpoints.scss</a> - Bootstrap Breakpoints mixin (available only for sass and scss)</li>
-		<li><a href="https://getbootstrap.com/docs/4.0/layout/grid/">bootstrap-grid</a> (optional) - Bootstrap Grid collection</li>
-</ol>
-
-<h2>Caching</h2>
-
-<p>Rename <strong>ht.access</strong> to <strong>.htaccess</strong> before place it in your web server. This file contain rules for htaccess resources caching.</p>
-
 <h2>Helpers</h2>
 
 <h3>font-weight helper</h3>
